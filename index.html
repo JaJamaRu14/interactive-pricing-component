@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Interactive pricing component</title>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-  Pageviews
-  $ /month
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <p class="header__description">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </header>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+    <main>
+      <div class="price-card">
+        <div class="price-card__slider">
+          <div class="price-card__pageviews">Pageviews</div>
+          <div class="price-card__slide">SLIDERRRRR</div>
+          <div class="price-card__price">$ /month</div>
+        </div>
+        <ul class="price-card__option">
+          <li class="price-card__option-item">Monthly Billing</li>
+          <li class="price-card__option-item">
+            <button class="price-card__toggle-btn">tbn</button>
+          </li>
+          <li class="price-card__option-item">Yearly Billing -25%</li>
+        </ul>
+        <ul class="price-card__list">
+          <li class="price-card__item">Unlimited websites</li>
+          <li class="price-card__item">100% data ownership</li>
+          <li class="price-card__item">Email reports</li>
+        </ul>
+        <button class="price-card__btn">Start my trial</button>
+      </div>
+    </main>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://twitter.com/shotime_14">Sho Shimizu</a>.
+      </div>
+    </footer>
+  </body>
 </html>

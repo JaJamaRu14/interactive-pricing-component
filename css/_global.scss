@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 2rem;
+
+  @media (min-width: 64em) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @media (min-width: 64em) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 1.2rem;
+
+  @media (min-width: 64em) {
+    font-size: 3rem;
+  }
+}
+
+.price-card {
+  background-color: aquamarine;
+}
+
+// .white {
+//   color: $white;
+// }
+
+// .dkGray {
+//   color: $darkGray;
+// }
