@@ -39,9 +39,20 @@
     <main>
       <div class="price-card">
         <div class="price-card__slider">
-          <div class="price-card__pageviews">Pageviews</div>
-          <div class="price-card__slide">SLIDERRRRR</div>
-          <div class="price-card__price">$ /month</div>
+          <div class="price-card__pageviews">
+            <span class="num-of-pageviews"></span> PAGEVIEWS
+          </div>
+          <div class="price-card__price">
+            $<span class="price-display"></span>/month
+          </div>
+          <input
+            type="range"
+            class="price-card__slidebar"
+            min="0"
+            max="4"
+            step="1"
+            value="2"
+          />
         </div>
         <ul class="price-card__option">
           <li class="price-card__option-item">Monthly Billing</li>
@@ -67,5 +78,6 @@
         >. Coded by <a href="https://twitter.com/shotime_14">Sho Shimizu</a>.
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
