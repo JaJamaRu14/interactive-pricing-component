@@ -25,6 +25,14 @@
       }
     </style>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -57,7 +65,10 @@
         <ul class="price-card__option">
           <li class="price-card__option-item">Monthly Billing</li>
           <li class="price-card__option-item">
-            <button class="price-card__toggle-btn">tbn</button>
+            <label class="switch">
+              <input type="checkbox" class="price-card__toggle-btn switch" />
+              <span class="slider round"></span>
+            </label>
           </li>
           <li class="price-card__option-item">Yearly Billing -25%</li>
         </ul>
