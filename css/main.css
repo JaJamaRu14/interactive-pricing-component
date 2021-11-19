@@ -38,10 +38,17 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  list-style: none;
 }
 
 body {
-  margin: 20px;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fafbff;
 }
 
 h1,
@@ -84,11 +91,82 @@ p {
   font-size: 15px;
 }
 
-.price-card {
-  background-color: #a5f3eb;
+header {
+  height: 33%;
+  text-align: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
-.price-card__slidebar {
+header .header__title {
+  font-size: 1.7rem;
+  color: #293356;
+  margin-bottom: 10px;
+}
+
+header .header__description {
+  color: #858fad;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-card {
+  width: 550px;
+  height: 400px;
+  font-size: 0.85rem;
+  color: #858fad;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.price-card .price-card__slider {
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.price-card .price-card__slider .price-card__pageviews {
+  display: inline-block;
+  margin: 50px;
+}
+
+.price-card .price-card__slider .price-card__price {
+  display: inline-block;
+  margin: 50px;
+  margin-left: 100px;
+}
+
+.price-card .price-card__slider .price-card__price .price-display {
+  display: inline-block;
+  font-size: 3rem;
+  color: #293356;
+}
+
+.price-card .price-card__slider .price-card__slidebar {
   width: 400px;
   height: 20px;
 }

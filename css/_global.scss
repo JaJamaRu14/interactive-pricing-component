@@ -10,10 +10,17 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  list-style: none;
 }
 
 body {
-  margin: 20px;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $very-pale-blue;
 }
 
 h1,
@@ -50,13 +57,73 @@ p {
   font-size: 15px;
 }
 
-.price-card {
-  background-color: $soft-cyan;
+header {
+  height: 33%;
+  text-align: center;
+  // background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+
+  .header__title {
+    font-size: 1.7rem;
+    color: $dark-desaturated-blue;
+    margin-bottom: 10px;
+  }
+
+  .header__description {
+    color: $grayish-blue;
+    font-weight: 600;
+    margin-top: 0;
+  }
 }
 
-.price-card__slidebar {
-  width: 400px;
-  height: 20px;
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.price-card {
+  width: 550px;
+  height: 400px;
+  font-size: 0.85rem;
+  color: $grayish-blue;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  .price-card__slider {
+    font-weight: 700;
+    letter-spacing: 1.3px;
+
+    .price-card__pageviews {
+      display: inline-block;
+      margin: 50px;
+    }
+
+    .price-card__price {
+      display: inline-block;
+      margin: 50px;
+      margin-left: 100px;
+
+      .price-display {
+        display: inline-block;
+        font-size: 3rem;
+        color: $dark-desaturated-blue;
+      }
+    }
+
+    .price-card__slidebar {
+      width: 400px;
+      height: 20px;
+    }
+  }
 }
 
 // Toggle switch stylying start
