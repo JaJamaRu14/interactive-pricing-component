@@ -45,8 +45,10 @@ const setCurrentValue = () => {
   numOfPageviews.innerText = priceTable[rangeValue].pageviews;
 
   if (priceDisplay.classList.contains('yearly')) {
-    priceDisplay.innerText = priceTable[rangeValue].price * 0.75;
+    let num = priceTable[rangeValue].price * 0.75;
+    priceDisplay.innerText = num.toFixed(2);
   } else {
-    priceDisplay.innerText = priceTable[rangeValue].price;
+    let num = priceTable[rangeValue].price;
+    priceDisplay.innerText = num.toFixed(2);
   }
 };
